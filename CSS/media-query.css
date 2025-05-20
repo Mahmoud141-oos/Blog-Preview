@@ -1,0 +1,21 @@
+/* tablet screens */
+@media only screen and (max-width: 1240px) and (min-width: 768px) {
+    .container {
+        width: 30%;
+    }
+
+    .attribution {
+        font-size: 14px;
+    }
+}
+
+/* mobile screens */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 70%;
+    }
+
+    .attribution {
+        font-size: 12px;
+    }
+}

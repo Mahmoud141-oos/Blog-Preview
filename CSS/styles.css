@@ -1,0 +1,128 @@
+/* Fonts */
+
+@font-face {
+    font-family: italic-font;
+    src: url('/blog-preview-card-main/assets/fonts/Figtree-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: font;
+    src: url('/blog-preview-card-main/assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: extra-bold-font;
+    src: url('/blog-preview-card-main/assets/fonts/static/Figtree-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: bold-font;
+    src: url('/blog-preview-card-main/assets/fonts/static/Figtree-SemiBold.ttf');
+}
+/* _________________________________________________________________________________________ */
+/* Variables */
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+/* _________________________________________________________________________________________ */
+/* Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: var(--Yellow);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.container {
+    background-color: var(--White);
+    width: 20%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px 5px var(--Gray-950);
+    border: 1px solid var(--Gray-950);
+}
+
+.top-section img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.top-center h5 {
+    padding: 10px 20px;
+    background-color: var(--Yellow);
+    width: fit-content;
+    border-radius: 5px;
+    font-family: extra-bold-font;
+    margin-bottom: 2.5px;
+}
+
+.top-center p {
+    font-family: bold-font;
+}
+
+.center-center h1 {
+    font-family: extra-bold-font;
+    font-size: 26px;
+    transition: all 0.35s ease;
+}
+
+.center-center h1:hover {
+    color: var(--Yellow);
+}
+
+.bottom-center p {
+    color: var(--Gray-500);
+    font-family: bold-font;
+    font-size: 17px;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bottom-section img {
+    width: 10%;
+    margin-right: 15px;
+}
+
+.bottom-section h4 {
+    font-family: extra-bold-font;
+    margin: 0;
+}
+
+.attribution { 
+    font-size: 16px;
+    text-align: center;
+    font-family: extra-bold-font;
+}
+
+.attribution a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    transition: all 0.35s ease;
+}
+
+.attribution a:hover  {
+    color: hsl(54, 71%, 11%);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    transform: scale(1.5);
+}
